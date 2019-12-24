@@ -6,12 +6,9 @@ pipeline {
                 echo 'building'
                 sh 'mvn package'
                 echo 'package created'
-            }
-            post {
-                echo 'post building'
                 archiveArtifacts artifacts : 'project/target/*.war'
-                
             }
+            
         }
         stage('Test') { 
             steps {
