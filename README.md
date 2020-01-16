@@ -1,2 +1,2 @@
 # CI-with-Jenkins-in-GCP-Demo
-auto build
+auto build new changes
